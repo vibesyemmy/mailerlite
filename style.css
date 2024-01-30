@@ -58,69 +58,77 @@ header {
     transition: all 0.3s ease;
 }
 
+.mobile-menu {
+    z-index: 10;
+    position: fixed;
+    width: calc(100vw - 32px);
+    height: calc(50vh - 72px);
+    background: white;
+
+    top: 72px;
+    left: 16px;
+
+    border-radius: 16px;
+}
+
 .navbar-logo {
     height: 32px; 
 }
 
-
-
-
-
 .hero-section {
-padding-bottom: 160px;
-padding-top: 80px;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-gap: 80px;
+    padding-bottom: 160px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
 }
 
 .hero-content {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
 }
 
 .weekly-recommendation {
-background: white;
-border-radius: 8px;
-border: 1px solid rgba(206, 243, 225, 0.80);
-padding: 4px 16px;
-text-align: center;
-color: #171717;
-font-size: 12px;
-font-weight: 500;
-text-transform: uppercase;
-line-height: 16px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgba(206, 243, 225, 0.80);
+    padding: 4px 16px;
+    text-align: center;
+    color: #171717;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 16px;
 }
 
 .hero-headline {
-text-align: center;
-color: black;
-font-size: 36px;
-font-weight: 700;
-line-height: 54px;
-padding-bottom: px;
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
 }
 
 .highlight {
-background: #CEF3E1;
-border-radius: 8px;
-padding: 0 24px;
+    background: #CEF3E1;
+    border-radius: 8px;
+    padding: 0 24px;
 }
 
 .hero-description {
-text-align: center;
-color: black;
-font-size: 18px;
-font-weight: 400;
-line-height: 24px;
-word-wrap: break-word;
-padding: 0 16px 24px 16px;
-max-width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    padding: 0 16px 24px 16px;
+    max-width: 100%;
 }
 
 .action-button {
@@ -144,7 +152,6 @@ max-width: 100%;
     background-position: bottom; 
     background-repeat: no-repeat; 
 }
-
 
 /*Book list*/
 
@@ -202,8 +209,27 @@ max-width: 100%;
     opacity: 0.5;
     font-size: 14px;
     letter-spacing: 0.35px;
+    position: relative; /* Added position */
+    transition: background-color 0.3s, color 0.3s; /* Added transition */
 }
 
+/* Add plus icon on hover */
+.book-price:hover::before {
+    content: "+"; /* Plus icon */
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 5px; /* Adjust as needed */
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+/* Change background color on hover */
+.book-price:hover {
+    background-color: #09C269; /* New background color */
+    color: #fff; /* New text color */
+    opacity: 1; /* Fully visible */
+    border: 0;
+}
 
 /*Unlock your creativity*/
 
@@ -214,7 +240,6 @@ max-width: 100%;
     align-items: flex-start;
     padding: 40px 16px;
     gap: 40px;
-    
 }
 
 .creative-potential-section {
@@ -361,9 +386,186 @@ max-width: 100%;
     color: #fff;
 }
 
+/*Footer*/
+
+.footer {
+    background-color: #f6f6f6;
+    padding: 40px 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 48px;
+}
+
+.footer-column {
+    min-width: 180px;
+}
+
+.footer-column h4 {
+    margin-bottom: 24px;
+    color: #000;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.footer-column-subscribe {
+    flex: 1;
+    min-width: 300px;
+    max-width: 520px;
+}
+
+.footer-column-subscribe form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    height: 54px;
+}
+
+.footer-column-subscribe input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.footer-column-subscribe button {
+    padding: 10px 20px;
+    background-color: #09c269;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+} 
+
+.subscription-title {
+    font-size: 24px;
+    color:#000;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.subscription-desc {
+    font-size: 16px;
+    color:#000;
+    opacity: 0.6;
+    padding-bottom: 16px;
+    line-height: 24px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 54px;
+    width: 100%;
+    background: white;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+}
+
+.subscribe-input {
+    font-size: 16px;
+}
+
+.subscribe-input::placeholder {
+    color: #6F6F6F;
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.subscribe-button {
+    font-size: 14px;
+}
+
+.helper-text {
+    font-size: 12px;
+    color:#000;
+    opacity: 0.5;
+    padding-bottom: 8px;
+}
+
+.socials {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #E5E7EB;
+    padding-top: 34px;
+}  
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.copywrite {
+    font-size: 16px;
+}
+
+.footies {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.footies a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bottom-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding-top: 40px;
+}
+
+.gdpr {
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.app-store {
+    padding-left: 20px;
+}
 
 /* Media Query for larger screens */
 @media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
     .nav-links {
         display: flex; /* Show the navigation links */
         list-style: none;
@@ -453,6 +655,7 @@ max-width: 100%;
     }
 
    
+   
     
 }
 
@@ -466,13 +669,26 @@ max-width: 100%;
         flex-direction: row;
     }
 
-    .level-card {
-        width: 50%;
+    /*Footer*/
+
+    .footer {
+        padding: 80px 64px;
     }
 
-    .level-card2 {
-        width: 50%;
+    .bottom-right {
+        width: 100%;
+        justify-content: flex-end;
+        padding-top: 0;
     }
+    
+    .bottom-left {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        
+    }  
 }
 
 @media screen and (min-width: 1440px) { 
@@ -481,4 +697,9 @@ max-width: 100%;
         gap: 16px;
         grid-template-columns: repeat(5, minmax(16rem, 18rem));
     }
+}
+
+/* Utility classes */
+.hidden {
+    display: none;
 }

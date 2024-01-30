@@ -1,4 +1,22 @@
+const menu = document.getElementsByClassName("mobile-menu")[0];
 function toggleHamburger() {
-    var navLinks = document.getElementById("navLinks");
-    navLinks.style.display = navLinks.style.display === "block" ? "none" : "block";
+    if (menu && menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+    } else {
+        menu.classList.add('hidden');
+    }
 }
+
+
+window.addEventListener('scroll', () => {
+    menu.classList.add('hidden');
+});
+
+window.addEventListener('click', (e) => {
+    const isMenu = e.target.classList.contains('hamburger');
+    if (isMenu) {
+        return;
+    } else {
+        menu.classList.add('hidden');
+    }
+});
