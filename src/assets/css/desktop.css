@@ -1,0 +1,66 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --1: 2px;
+  --2: 4px;
+  --3: 8px;
+  --4: 12px;
+  --5: 16px;
+  --6: 24px;
+  --7: 32px;
+  --8: 40px;
+  --9: 48px;
+  --10: 64px;
+  --11: 80px;
+  --12: 96px;
+  --13: 160px;
+  --typeface-family-display: Inter;
+  --typeface-family-text: Inter;
+  --typeface-weight-bold: Bold;
+  --typeface-weight-semi-bold: Semi Bold;
+  --typeface-weight-regular: Regular;
+  --typeface-size-display-0: 158;
+  --typeface-size-display-1: 99px;
+  --typeface-size-display-2: 62px;
+  --typeface-size-display-3: 50px;
+  --typeface-size-heading-1: 35px;
+  --typeface-size-heading-2: 25px;
+  --typeface-size-heading-3: 20px;
+  --typeface-size-subtitle-1: 16px;
+  --typeface-size-subtitle-2: 14px;
+  --typeface-size-body-large: 18px;
+  --typeface-size-body-medium: 16px;
+  --typeface-size-body-small: 14px;
+  --typeface-size-caption: 12px;
+  --typeface-size-overline: 12px;
+  --typeface-line-height-display-0: 192px;
+  --typeface-line-height-display-1: 100px;
+  --typeface-line-height-display-2: 72px;
+  --typeface-line-height-display-3: 60px;
+  --typeface-line-height-heading-1: 44px;
+  --typeface-line-height-heading-2: 32px;
+  --typeface-line-height-heading-3: 28px;
+  --typeface-line-height-subtitle-1: 24px;
+  --typeface-line-height-subtitle-2: 20px;
+  --typeface-line-height-body-large: 24px;
+  --typeface-line-height-body-medium: 24px;
+  --typeface-line-height-body-small: 20px;
+  --typeface-line-height-caption: 16px;
+  --typeface-line-height-overline: 16px;
+  --typeface-letter-spacing-display-0: -1.5px;
+  --typeface-letter-spacing-display-1: -1.5px;
+  --typeface-letter-spacing-display-2: -1px;
+  --typeface-letter-spacing-display-3: -0.5px;
+  --typeface-letter-spacing-heading-1: -0.25px;
+  --typeface-letter-spacing-heading-2: 0px;
+  --typeface-letter-spacing-heading-3: 0.25px;
+  --typeface-letter-spacing-subtitle-1: 0.5px;
+  --typeface-letter-spacing-subtitle-2: 0.25px;
+  --typeface-letter-spacing-body-large: 0px;
+  --typeface-letter-spacing-body-medium: 0px;
+  --typeface-letter-spacing-body-small: 0px;
+  --typeface-letter-spacing-caption: 0.25px;
+  --typeface-letter-spacing-overline: 8px;
+}

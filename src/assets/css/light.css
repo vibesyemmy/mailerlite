@@ -1,0 +1,36 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --text-high-emphasis: #000000;
+  --text-medium-emphasis: #000000;
+  --text-low-emphasis: #000000;
+  --text-on-interactive-alert: #ffffff;
+  --surface-enabled: #000000;
+  --surface-hover: #000000;
+  --surface-focus-pressed: #000000;
+  --surface-selected: #2ba184;
+  --surface-active: #2ba184;
+  --alert-error-default: #cc3633;
+  --alert-error-hover: #a32b29;
+  --alert-error-pressed: #7a201f;
+  --alert-success-default: #59a66b;
+  --alert-success-hover: #478556;
+  --alert-success-pressed: #366340;
+  --alert-warning-default: #fa8c05;
+  --alert-warning-hover: #c87004;
+  --alert-warning-pressed: #965403;
+  --alert-info-default: #1ca3e3;
+  --alert-info-hover: #1783b5;
+  --alert-info-pressed: #116288;
+  --background-01: #ffffff;
+  --interactive-enabled: #2ba184;
+  --interactive-hover: #207963;
+  --interactive-pressed: #165042;
+  --decorative-01: #000000;
+  --decorative-02: #000000;
+  --background-02: #f1f4f3;
+  --background-03: #e3e8e7;
+  --background-alternative-01: #eef9ff;
+}
